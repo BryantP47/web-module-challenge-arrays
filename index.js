@@ -109,7 +109,8 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array,string){
-  array.unshift(string);
+  for(let i = 0; i <array.length; i++)
+    array.unshift(string);
   return array;
 }
 
